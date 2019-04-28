@@ -1,0 +1,26 @@
+{
+  "dashboard-e2e": [
+    {
+      "projectName": "dashboard",
+      "type": "implicit"
+    }
+  ],
+  "ui-toolbar": [],
+  "dashboard": [
+    {
+      "projectName": "ui-login",
+      "type": "es6Import"
+    },
+    {
+      "projectName": "material",
+      "type": "es6Import"
+    },
+    {
+      "projectName": "core-data",
+      "type": "es6Import"
+    }
+  ],
+  "core-data": [],
+  "ui-login": [],
+  "material": []
+}

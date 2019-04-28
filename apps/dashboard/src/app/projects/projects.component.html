@@ -1,0 +1,18 @@
+<div class="container">
+  <!-- PROJECTS LIST -->
+  <div class="col-50">
+    <app-project-list
+      [projects]="projects$ | async"
+      (selected)="selectProject($event)"
+      (deleted)="deleteProject($event)">
+    </app-project-list>
+  </div>
+  <!-- PROJECT DETAILS -->
+  <div class="col-50">
+    <app-project-details
+    [project]="selectedProject"
+    (submitted)="saveProject($event)"
+    (cancelled)="cancel($event)">
+  </app-project-details>
+  </div>
+</div>
